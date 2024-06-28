@@ -1,0 +1,8 @@
+
+## trash
+*.DS_Store
+*.Rproj.user
+
+## too much data
+*.rds
+.Rproj.user
