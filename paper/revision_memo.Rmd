@@ -81,18 +81,25 @@ Similarly, the editor notes that
 
 We agree with these concerns. We did two changes to improve upon these points:
 
-- We added a new item using the *British Elections Study*'s panel study, generalized trust, an item collected between 2019 and 2024 across 6 years and 5 waves, in a potentially disruptive time period due to COVID-19. As a more general note, we believe that the tool we propose should apply in all cases, but we agree that a more thorough set of examples are helpful.
+- We added a new item using the *British Elections Study*'s panel study, generalized trust, an item collected between 2019 and 2024 across 6 years and 5 waves, in a potentially disruptive time period due to COVID-19. As a more general note, we believe that the tool we propose should apply in all cases, but we agree that a more thorough set of examples is helpful.
 - Additionally, we now present a simulation study that applies our protocol in different DGPs and assesses the conditions under which we can make better guesses about the true DGPs (see below for more details). We think this new section provides important answers about the questions of generalizability, panel span, varying DGP compositions, and related issues.
 
 # Issues on Analytic Strategy and Implementation
 
-## The Clarity of the Grid Search Discussions
+## The Grid-Search Procedure
 
 R3 notes that
 
 > "the five bullet point explanation of the Grid-Search Procedure is inadequate."
 
-We implemented three solutions for this issue. First, we now introduce our grid-search algorithm as an R package, `gridsearch`, which will accompany to this article. As we detail in the paper, we revised our procedure and substantially increased its efficiency, which means that it will be easy for people to implement our procedure in their own projects. Second, we now include a full replication package for the analyses presented in this project as a footnote in the article. We were planning to do so along with publication, but for a paper of this kind, it is beneficial for the reviewers to see the full code, so we attached a view-only (anonymized) link in the manuscript. Finally, we made substantive rewrites to the manuscript to make our protocol as clear and concise as possible. We hope that the R package, the replication repo, and these rewrites make our strategy more clear.
+We implemented three solutions and a larger revision for this problem: 
+
+1. We updated the mechanics of our approach by using Approximate Bayesian Computation [@beaumont2010], which increased the efficiency and generalizability of our procedure.
+2. We now introduce our grid-search algorithm as an accompanying R package, `gridsearch`. As we detailed in the paper, we revised our procedure and substantially increased its efficiency, which means that it will be easy for people to implement our method in their own projects.
+3. We included a full (anonymized) replication package for the analyses presented in this project.
+4. We made substantial rewrites to the manuscript to increase the clarity of our protocol.
+
+We hope that the R package, the replication repo, and these rewrites make our strategy more clear.
 
 ## Simulations and Validations
 
@@ -152,3 +159,5 @@ Thank you all for this intellectual exchange, and we greatly appreciate your dee
 Regards,
 
 The Authors
+
+# References
