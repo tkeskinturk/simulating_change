@@ -26,7 +26,7 @@ header-includes:
 [^thanks]: We thank the participants of the *Worldview Lab at Kenan Institute for Ethics* at Duke University for their insightful and helpful comments on this project.
 [^TK]: Department of Sociology, Duke University, `turgut.keskinturk@duke.edu`.
 [^PB]: Department of Sociology, Duke University, `pablo.bello@duke.edu`.
-[^SV]: Department of Sociology, Duke University, `stephen.vaisey@duke.edu`.
+[^SV]: Department of Sociology and Political Science, Duke University, `stephen.vaisey@duke.edu`.
 
 ```{r setup, include=FALSE}
 library(tidyverse); library(knitr); library(kableExtra)
@@ -389,20 +389,6 @@ A concrete example will help clarify what these numbers mean. The mean sensitivi
 For sensitivity, the number is higher at .828. This means that 83% of the non-changers are correctly classified. This is largely due to the marginal distribution of change.
 
 The distributions of sensitivity and specificity for all three analyses are presented in Figure 7. It is clear that our general ability to identify true changers is quite low, whereas the identification of true non-changers is rather better. Across simulations, sensitivity ranges between 17% and 54%, while specificity scores range between 74% and 95%. That said, there are also subtle differences among the case studies. Sensitivity scores are consistently lower in the legality of abortion case, reflecting our earlier discussion about how the plausible set of scenarios was much higher in that case. At the same time, the spread of simulation scores is rather high in the case of immigration spending for both sensitivity and specificity, suggesting that linear trajectories in longer panels might be rather susceptible to randomness in our analyses.
-
-```{=latex}
-\begin{figure}[!ht]
-\begin{center}
-```
-```{r figure7, out.width = "100%"}
-knitr::include_graphics("../figures/detection.png")
-```
-```{=latex}
-\end{center}
-\caption*{Figure 7: Sensitivity and Specificity Across Case Studies}
-\footnotesize{\textit{Notes:} The figure depicts the sensitivity---true positives divided by the sum of true positives and false positives---and specificity---true negatives divided by the sum of true negatives and false negatives---scores across three studies.}
-\end{figure}
-```
 
 These results suggest that, while the grid-search procedure allows us to identify plausible generative models that may have generated the empirical patterns, detecting true change at the level of individuals occurs under only very narrow conditions. The fact that linear trends with longer panels performed better, on average, than the three-wave cases indicates that having longer panels might be essential to dampen the negative effects of response reliability on our estimates. This finding emphasizes the importance of collecting panel data over more extended periods to increase the robustness of our proposed DGPs, and the accuracy of identifying true changers in the population.
 
