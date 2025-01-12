@@ -109,7 +109,7 @@ example_p1 <- data_A |>
     alpha = 0.8
   ) +
   theme_ipsum_rc(grid = "XxY", axis_title_size = 12) +
-  labs(subtitle = "Slopes from DGP 1", 
+  labs(subtitle = "Change Scores from DGP 1", 
        x = "", 
        y = "Relative Frequency") +
   scale_x_continuous(
@@ -129,8 +129,8 @@ example_p2 <- data_B |>
     alpha = 0.8
   ) +
   theme_ipsum_rc(grid = "XxY", axis_title_size = 12) +
-  labs(subtitle = "Slopes from DGP 2", 
-       x = "Individual-Level Slope Coefficients", 
+  labs(subtitle = "Change Scores from DGP 2", 
+       x = "Change Scores", 
        y = "") +
   scale_x_continuous(
     limits = c(-1.15, 1.15),
@@ -147,7 +147,7 @@ example_p3 <-
   stat_ecdf(aes(x = dgp2), geom = "step", col = my_oka[3]) +
   theme_ipsum_rc(grid = "XxY", axis_title_size = 12) +
   labs(subtitle = "Empirical CDF",
-       x = "Individual-Level Slope Coefficients", 
+       x = "Change Scores", 
        y = "ECDF") +
   scale_x_continuous(breaks = scales::pretty_breaks()) +
   scale_y_continuous(breaks = scales::pretty_breaks())
